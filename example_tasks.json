@@ -1,0 +1,73 @@
+{
+  "total_resources": 4,
+  "tasks": [
+    {
+      "name": "A",
+      "duration": 2,
+      "dependencies": [],
+      "resources_required": 1,
+      "priority": 1,
+      "deadline": -1
+    },
+    {
+      "name": "B",
+      "duration": 3,
+      "dependencies": [
+        "A"
+      ],
+      "resources_required": 2,
+      "priority": 1,
+      "deadline": -1
+    },
+    {
+      "name": "C",
+      "duration": 4,
+      "dependencies": [
+        "A"
+      ],
+      "resources_required": 1,
+      "priority": 1,
+      "deadline": -1
+    },
+    {
+      "name": "D",
+      "duration": 2,
+      "dependencies": [
+        "B",
+        "C"
+      ],
+      "resources_required": 3,
+      "priority": 1,
+      "deadline": -1
+    },
+    {
+      "name": "E",
+      "duration": 5,
+      "dependencies": [
+        "B"
+      ],
+      "resources_required": 2,
+      "priority": 1,
+      "deadline": -1
+    },
+    {
+      "name": "F",
+      "duration": 3,
+      "dependencies": [
+        "D",
+        "E"
+      ],
+      "resources_required": 1,
+      "priority": 1,
+      "deadline": 12
+    },
+    {
+      "name": "G",
+      "duration": 2,
+      "dependencies": [],
+      "resources_required": 2,
+      "priority": 2,
+      "deadline": -1
+    }
+  ]
+}
